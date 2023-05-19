@@ -1,17 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
+import { Navigation } from "../navigation";
+import { Socials } from "../socials";
 
 export default function About() {
   return (
     <body className="flex w-full min-h-screen flex-col items-center">
-      <div className="absolute right-[24px] top-[24px]">
-        <Link href="/" className="text-xs text-gray-400 mr-4">
-          HOME
-        </Link>
-        <button className="text-xs text-gray-400">
-          CONTACT
-        </button>
-      </div>
+      <Navigation />
       <div className="py-24 text-xl">
         <h1>ABOUT</h1>
       </div>
@@ -26,6 +20,7 @@ export default function About() {
           Donec volutpat, nunc sed cursus dictum, arcu sapien pretium enim, vel ullamcorper sem orci porttitor leo. Aenean tortor ipsum, imperdiet ut diam ac, commodo sodales leo. Donec pharetra purus nunc, vel laoreet est finibus condimentum. In lobortis malesuada nibh, nec ultrices ipsum vulputate at. Etiam auctor ipsum non auctor lacinia. 
         </div>
       </div>
+      <Socials />
     </body>
   );
 }
