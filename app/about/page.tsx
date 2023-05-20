@@ -9,11 +9,11 @@ export default function About() {
       <div className="py-24 text-xl">
         <h1>ABOUT</h1>
       </div>
-      <div className="w-full px-24 flex flex-row place-content-evenly">
-        <div className="min-w-[25%] mr-8">
+      <div className="w-full bg-black px-48 flex flex-row place-content-evenly">
+        <div className="min-w-[25%] mr-12">
           <Image width={500} height={500} alt="Picture of Jack" src="/profilePhoto.png" className="rounded-full"/>
         </div>
-        <div className="text-gray-200">
+        <div className="text-gray-200 h-[500px] max-h-[50vh] pr-1.5 overflow-hidden hover:overflow-y-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh lacinia velit scelerisque congue. In a feugiat magna, sit amet dignissim lectus. Proin vel ex a nulla consectetur semper a sed mi. Praesent luctus vitae ligula id feugiat. Quisque ac facilisis sem. Duis pulvinar gravida mauris. Fusce dignissim massa sed scelerisque condimentum. Curabitur ultricies porttitor nulla, et eleifend ligula cursus eget. Donec sed laoreet quam. Sed quis turpis sed magna volutpat dignissim. Phasellus vulputate neque at pretium congue. Nunc quis sapien lorem. Nunc justo nisl, placerat sed magna et, auctor euismod turpis. Nulla molestie, odio eu cursus malesuada, metus mi convallis sapien, vitae pulvinar nulla leo eget lacus. Proin blandit imperdiet elit at pharetra.
           <br />
           <br />
