@@ -1,19 +1,32 @@
 import Image from "next/image";
 
-type ImageData = {
+export type ImageData = {
   name: string,
   src: string,
   date: Date,
   tags: string[],
 }
 
-export function ImageUI(image: ImageData) {
+interface ImageUIProps {
+  image: ImageData;
+}
+
+export function ImageUI(props: ImageUIProps) {
   return (
-    <Image src={image.src} alt={image.name} />
+    <Image width={400} height={400} className="object-cover" src={props.image.src} alt={props.image.name} />
   );
 }
 
-const traditionalImages: ImageData[] = [
+export const traditionalImages: ImageData[] = [
+  {
+    name: "TESTIBEX",
+    src: "https://drive.google.com/uc?export=view&id=10mMoKMnC80BWghJ9ZxxWG-txTA5Gv50H",
+    date: new Date(),
+    tags: []
+  },
+]
+
+export const digitalImages: ImageData[] = [
   {
     name: "",
     src: "",
@@ -28,22 +41,7 @@ const traditionalImages: ImageData[] = [
   },
 ]
 
-const digitalImages: ImageData[] = [
-  {
-    name: "",
-    src: "",
-    date: new Date(),
-    tags: []
-  },
-  {
-    name: "",
-    src: "",
-    date: new Date(),
-    tags: []
-  },
-]
-
-const gamedevImages: ImageData[] = [
+export const gamedevImages: ImageData[] = [
   {
     name: "",
     src: "",
