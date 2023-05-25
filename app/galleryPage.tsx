@@ -34,9 +34,11 @@ export function GalleryPage(props: GalleryProps) {
     }
   }, [activeImage]);
   useEffect(() => {
-    window.addEventListener("keydown", ()=>{setActiveImage(undefined)});
-    return () => {
-      window.removeEventListener("keydown", ()=>{setActiveImage(undefined)});
+    if (typeof window !== 'undefined') {
+      window.addEventListener("keydown", ()=>{setActiveImage(undefined)});
+      return () => {
+        window.removeEventListener("keydown", ()=>{setActiveImage(undefined)});
+      }
     }
   },[]);
   return (
