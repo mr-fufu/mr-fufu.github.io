@@ -147,7 +147,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <Socials />
+      <Socials/>
     </body>
   )
 }
