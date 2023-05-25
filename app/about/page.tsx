@@ -14,7 +14,7 @@ export default function About() {
           {
             // ABOUT PAGE TEXT CONTENT HERE
           }
-          'm Jack. Draw stuff.
+          &apos;m Jack. Draw stuff.
         </div>
       </div>
       <Socials />
