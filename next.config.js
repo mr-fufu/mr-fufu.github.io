@@ -1,15 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   images: {
-    loader: 'akamai',
-    path: '',
     remotePatterns: [
       {
         hostname: "drive.google.com",
       },
     ],
   },
-  assetPrefix: './',
-}
-
-module.exports = nextConfig;
+};
