@@ -8,11 +8,7 @@ const nextConfig = {
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
   images: {
-    domains: [
-      {
-        hostname: "drive.google.com",
-      },
-    ],
+    domains: ["drive.google.com"],
   },
 };
  
