@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   images: {
     loader: 'akamai',
     path: '',
@@ -11,3 +11,5 @@ module.exports = {
   },
   assetPrefix: './',
 }
+
+module.exports = nextConfig;
